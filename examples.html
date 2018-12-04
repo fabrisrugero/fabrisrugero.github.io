@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rugero Fabris">
+    <meta name="description" content="Assignment Three">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/content.css" type="text/css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="css/examples.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    var container, num, open = [], images, player, h33s = [];
+    window.addEventListener('transitionend', hidetext, false);
+    document.addEventListener("DOMContentLoaded", function(event) {
+        images = document.getElementsByTagName("img");
+        for (var i = 0; i < images.length; i++){ open.push(false);
+            images[i].setAttribute('data-index', i);
+            images[i].addEventListener('click', function(){
+                num = this.getAttribute('data-index');
+                container = document.getElementsByClassName("textcontainer")[num];
+                if(open[num]){
+                    this.className = 'arrow-down'; 
+                    container.children[0].className = 'text close';}
+                else{
+                    this.className = 'arrow-down open'; 
+                    container.className = 'textcontainer';
+                    container.children[0].className = 'text open'; }
+                open[num] = !open[num];
+                }, false);
+            }
+        });
+        // 1. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        // 2. This function creates an <iframe> (and YouTube player)
+        // after the API code downloads.
+        function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '315', width: '550',
+            videoId: 'uhJaFjRiln4',
+            playerVars: { 'autoplay': 0, 'controls': 0 },
+            events: { 'onReady': onPlayerReady }});}
+        // 3. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            var h33s = document.getElementsByTagName("h3");
+            for (var i = 0; i < h33s.length; i+=2)
+                h33s[i].addEventListener('click', YouTubeSeekTo, false); 
+                window.h33s.push(h33s[i]);}
+        function hidetext(event) {
+        if (event.propertyName === 'max-height' && !open[num]) {
+            container.children[0].classList.add('nomargins');
+            container.className = 'textcontainer close';}}
+        function YouTubeSeekTo(event){
+            var time = event.target.innerText;
+            var minutes = Number(time.substr(1,2));
+            var seconds = Number(time.substr(4,2));
+            player.seekTo(minutes*60 + seconds, true);}
+    </script>
+</head>
+<body>
+    <header>
+       <h1>FFMPEG</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="instal.html">Instal</a></li>
+            <li><a href="howto.html">HowTo</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li class="selected"><a href="examples.html">Examples</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <aside>
+              <div id="player"></div>
+            </aside>
+            <aside>
+                    <img src="images/nice_button_trans.png" alt=""><h3>@00:56..&nbsp;</h3><h3>Cut first video clip</h3>
+                    <div class="textcontainer close">
+                        <p class="text close nomargins">Lorem ipsum dolor sit amet, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio</p>
+                   </div>
+                    <img src="images/nice_button_trans.png" alt=""><h3>@01:29..&nbsp;</h3><h3>Cut second video clip</h3>
+                    <div class="textcontainer close">
+                        <p class="text close nomargins">Lorem ipsum dolor sit amet, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio</p>
+                   </div>
+                    <img src="images/nice_button_trans.png" alt=""><h3>@02:20..&nbsp;</h3><h3>Joining video clips</h3>
+                    <div class="textcontainer close">
+                        <p class="text close nomargins">Lorem ipsum dolor sit amet, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio</p>
+                   </div>
+                    <img src="images/nice_button_trans.png" alt=""><h3>@02:38..&nbsp;</h3><h3>Play first video clip</h3>
+                    <div class="textcontainer close">
+                        <p class="text close nomargins">Lorem ipsum dolor sit amet, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio</p>
+                   </div>
+                    <img src="images/nice_button_trans.png" alt=""><h3>@02:51..&nbsp;</h3><h3>Play second video clip</h3>
+                    <div class="textcontainer close">
+                         <p class="text close nomargins">Lorem ipsum dolor sit amet, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio</p>
+                    </div>
+                    <img  src="images/nice_button_trans.png" alt=""><h3>@03:06..&nbsp;</h3><h3>Playing joined video clip</h3>
+                    <div class="textcontainer close">
+                        <p class="text close nomargins">Lorem ipsum dolor sit amet, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio</p>
+                   </div>
+            </aside>
+            <section>
+                <div class="textcontainer">
+                    <p class="text">The above embbeded youtube video is an example of how i use FFmpeg in my personal life. I love rugby. Unfortunatetly rugby isn't so big in Canad Thus The only way to watch the sport that I love and play in high school is to Download them via the Internent. Often times some games a classics and would love to create a highlight reel thus with FFMPEG I am able to Cut clips from any obscure file format and join them into a more common file format and thus making my highlight reels. I creates a wrapper to make the proccess faster. Click play and check it out.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <span>&copy; 2018 by Rugero Fabris</span> 
+        <script src=http://my.gblearn.com/js/loadscript.js></script> 
+    </footer>     
+</body>
+</html>

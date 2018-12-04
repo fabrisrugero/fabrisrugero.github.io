@@ -1,0 +1,68 @@
+.commands div:nth-child(even):not(:first-child){
+    width: 45px;
+    height: 45px;
+    padding-left: 5px;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+.commands div:nth-child(odd):not(:first-child){
+    width: 878px;
+    margin-left: 5px;
+}
+.commands div:first-child *:not(:last-child){
+    float: left;
+}
+.commands div:first-child *:last-child{
+    clear: left;
+}
+#override01,#override02,#override05,#override06{
+    margin-bottom: 12px;
+}
+#override16,#override17{
+    border: 0;
+    width: 50px;
+    height: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 22px;
+    background-color: white;
+}
+.commands div span{
+    display: table;
+    color: white;
+    margin: 5px 5px 5px;
+}
+.commands > div:first-child{
+    margin: 15px 15px 10px;
+    height: 100px;
+    width: 933px;
+}
+#override03,#override04{
+    margin: auto;
+}
+#override10,#override15{
+    color: #fefb64;
+    line-height: 40px;
+    text-decoration: underline;
+    text-decoration-color: #ffa834;
+}
+.sectionh2,#override10,#override15{
+    font-size: 36px;
+}
+#override10,#override11,#override12,
+#override13,#override14,#override15{
+    display: block;
+}
+#override12,#override11,#override13,#override14{
+    font-size: 26px;
+    color: white;
+}
+#override14,#override11{
+    margin-top: 7px;
+    margin-left: 3px;
+}
+#override13,#override12{
+    margin: auto;
+    width: 654px;
+}
+

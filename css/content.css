@@ -1,0 +1,96 @@
+main{
+    padding-top: 15px;
+}
+.sectionh2{
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #fefb64;
+    text-decoration: underline;
+    text-decoration-color: #ffa834;
+    font-family:  'Spartarana', Helvetica, Arial, sans-serif;  
+}
+main > section > div:first-of-type, #override_twice01{
+    background-color: #797002;
+    border: 2px solid white;
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+    margin-left: 10px;
+    height: 70px;
+    width: 957px;
+}
+main > section > div:first-of-type div {
+    width: 30px;
+    height: 5px;
+    margin: 0 5px 0;
+    background-color: white;
+}
+main > section > div:first-of-type h2{
+    color: white;
+    font-size: 52px;
+    margin: 5px 5px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main > section > div:first-of-type h2:first-child{
+    font-size: 48px;
+    margin-right: 0;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: 'urbanJungle', Helvetica, Arial, sans-serif;
+}
+main > section > div:first-of-type h3, #override_twice01 h3{
+    color: white;
+    font-size: 36px;
+    margin-left: 5px;
+    text-align: center;
+}
+main > section > div:first-child ~ div{
+    background-color: #58330a;
+    border: 2px solid white;
+    margin: 10px 10px 15px;
+    padding-bottom: 5px;
+    width: 957px;
+}
+main > section > div:first-child ~ div p,
+ #override001 p, #override002 p, #override003 p{
+    color: white;
+    font-size: 22px;
+    margin: 10px 10px 0;
+    font-family: 'NutCracker', Helvetica, Arial, sans-serif;
+}
+main > section > div:first-child ~ div div:not(:first-child){
+    background-color: black;
+    border: 2px solid white;
+}
+main > section > div:first-child ~ div *:not(:first-child){
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+main > section > div:first-child ~ div h3{
+    margin: 5px 5px;
+    font-size: 30px;
+    color: white;
+    float: left;
+    clear: left;
+}
+main > section > div:first-of-type > *{
+    display: inline-block;
+}
+@font-face {
+    font-family: "urbanJungle";
+    src: url("fonts/UrbanJungleDEMO.eot"); src: 
+    url("fonts/UrbanJungleDEMO.woff") format("woff"),
+    url("fonts/UrbanJungleDEMO.otf") format("opentype"),
+    url("fonts/urbanJungle.svg#UrbanJungleDEMO") format("svg");
+}
+@font-face {
+    font-family: "NutCracker";
+    src: url("fonts/thenutcracker.eot"); src: 
+    url("fonts/thenutcracker.woff") format("woff"),
+    url("fonts/UrbanJungleDEMO.otf") format("opentype"),
+    url("fonts/urbanJungle.svg#UrbanJungleDEMO") format("svg");
+}
+.padded{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,66 @@
+main{
+    padding-top: 0;
+    overflow: auto;
+}
+section h2{
+    width: 500px;
+}
+section:first-child{
+    border-bottom: 2px solid black;
+}
+.text{
+    color: white;
+    font-size: 19px;
+    margin: 5px 5px 0;
+    line-height: 19px;
+    font-family:  'Youth', Helvetica, Arial, sans-serif;
+}
+.textcontainer{
+    background-color: #58330a;
+    border: 2px solid white;
+    padding-bottom: 5px;
+    margin: 3px 5px 5px;
+}
+main > div{
+    float: left;
+    width: 680px;
+    border-right: 2px solid black;
+}
+aside{
+    width: 296px;
+    float: left;
+    vertical-align: top;
+}
+aside > div{
+    margin-left: 5px;
+    margin-bottom: 7px;
+}
+aside > div:first-of-type{
+    margin-top: 20px;
+}
+aside div div{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: black;
+    border: solid 1px white;
+}
+aside div span, aside div a{
+    font-family: Helvetica, Arial, sans-serif;
+    display: inline-block;
+    line-height: 0.4;
+    color: white;
+    font-size: 20px;
+}
+aside div > span{
+    margin-right: 5px;
+}
+@font-face {
+    font-family: "Youth";
+    src: url("fonts/NIGHTMAREPILLS.eot"); src: 
+    url("fonts/NIGHTMAREPILLS.woff") format("woff"),
+    url("fonts/NIGHTMAREPILLS.otf") format("opentype"),
+    url("fonts/Youth.svg#NIGHTMAREPILLS") format("svg");
+}

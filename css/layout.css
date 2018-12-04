@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.selected{
+    background-color: red;
+    border-bottom: 2px solid #c1861d;
+}
+body{
+    margin: auto;
+    width: 985px;
+    height: 2000px;
+}
+header {
+    height: 158px;
+    text-align: center;
+    background-color: black;
+    border: 2px solid #c1861d;
+}
+
+header h1{
+    color: white;
+    font-size: 80px;
+    font-family:  'beautiful_people', Helvetica, Arial, sans-serif;
+}
+footer{
+    clear: both;
+}
+nav{
+    height: 44px;
+    background-color: #1c542d;
+    border-left: 1px solid #c1861d;
+    border-right: 2px solid #c1861d;
+    border-bottom: 2px solid #c1861d;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    border-left: 1px solid #c1861d;
+    border-right: 1px solid #c1861d;
+}
+nav ul li:last-child{
+    border-right: none;
+}
+nav ul li:last-child:hover{
+    border-right: 1px solid #c1861d;
+}
+nav ul li:hover{
+    border-bottom: 2px solid #c1861d;
+    background-color:#c7c2ba;
+}
+nav ul li a:hover {
+    color:red;
+}
+nav ul li a {
+    font-family:  'Black', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    display: block;
+    padding: 5px;
+}
+main{
+    width: 981px;
+    background-color: #9c29b7;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black; 
+}
+@font-face {
+    font-family: "beautiful_people";
+    src: url("fonts/beautiful_people_personal_use-webfont.eot"); src: 
+    url("fonts/beautiful_people_personal_use-webfont.woff") format("woff"),
+    url("fonts/beautiful_people_personal_use-webfont.otf") format("opentype"),
+    url("fonts/beautiful_people.svg#beautiful_people_personal_use-webfont") format("svg");
+}
+@font-face {
+    font-family: "Black";
+    src: url("fonts/black_personal_use-webfont.eot"); src: 
+    url("fonts/black_personal_use-webfont.woff") format("woff"),
+    url("fonts/black_personal_use-webfont.otf") format("opentype"),
+    url("fonts/Black.svg#black_personal_use-webfont") format("svg");
+}
+@font-face {
+    font-family: "Spartarana";
+    src: url("fonts/Spantaran.eot"); src: 
+    url("fonts/Spantaran.woff") format("woff"),
+    url("fonts/Spantaran.otf") format("opentype"),
+    url("fonts/Spartarana.svg#Spantaran") format("svg");
+}

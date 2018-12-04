@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rugero Fabris">
+    <meta name="description" content="Assignment Three">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/howto.css" type="text/css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="css/content.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+       <h1>FFMPEG</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="instal.html">Instal</a></li>
+            <li class="selected"><a href="howto.html">HowTo</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="examples.html">Examples</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div><h2 id="override03">VIDEO EDITING</h2></div>
+            <div class="commands">
+                <div><h2 class="sectionh2">Example</h2><h2 id="override10">&nbsp;01</h2><div id="override16"></div><h4 id="override11">Splitting/cutting a .mkv clip into four different formats</h4>
+                    <h4 id="override12">Open the command line and type the following commands:</h4></div>
+                <div><h3>01</h3></div><div><span>C:\Users\Rugero\Downloads\ffmpeg-20181123-fa08345-win64-static\bin\> ffmpeg -i "C:\Users\Rugero\Downloads\Funny.mkv" -ss 00:00:20 -c:a copy -s 1280x720 -t 15 "C:\Users\Rugero\Videos\Cineplex Entertainment\Funnyclips\Funny_eagle.mkv"</span></div>
+                <div><h3>02</h3></div><div id="override01"><span>C:\Users\Rugero\Downloads\..\..\bin\> ffmpeg -i Funny.mkv -ss 00:00:35 -c:a copy -c:v vp9 -b:v 1M -t 15 Funny_bird.mp4</span></div>
+                <div><h3>03</h3></div><div id="override02"><span>C:\Users\Rugero\Downloads\..\..\bin\> ffmpeg -i Funny.mkv -ss 00:00:50 -c:v copy -c:a flac -t 15 Funny_dog.flv</span></div>
+                <div><h3>04</h3></div><div><span>C:\Users\Rugero\Downloads\..\..\bin\> ffmpeg -i "C:\Users\Rugero\Downloads\Funny.mkv" -ss 00:00:65 -c:a copy -s 100x56 -t 15 "C:\Users\Rugero\Videos\Cineplex Entertainment\rawblackBjsFunny_man.gif"</span></div>
+            </div>
+        </section>
+        <section>
+            <div><h2 id="override04">IMAGE EDITING</h2></div>
+            <div class="commands">
+                <div><h2 class="sectionh2">Example</h2><h2 id="override15">&nbsp;02</h2><div id="override17"></div><h4 id="override14">Cropping/cutting a JPG into four different formats</h4>
+                    <h4 id="override13">Open the command line and type the following commands:</h4></div>
+                <div><h3>01</h3></div><div><span>C:\Users\Rugero\Downloads\ffmpeg-20181123-fa08345-win64-static\bin\> ffmpeg -i "C:\Users\Rugero\Downloads\input.jpg" -vf scale=320:240 "C:\Users\Rugero\Pictures\Cineplex Entertainment\FunnyImages\output_320x240.jpeg"</span></div>
+                <div><h3>02</h3></div><div id="override05"><span>C:\Users\Rugero\Downloads\..\..\bin\> ffmpeg -i input.jpg -vf crop=200:100:130:0 scale=320:240 cropped_output_320x240.png</span></div>
+                <div><h3>03</h3></div><div id="override06"><span>C:\Users\Rugero\Downloads\..\..\bin\> ffmpeg -i input.jpg -vf scale=320:-1 output_320xUnknown.gif</span></div>
+                <div><h3>04</h3></div><div><span>C:\Users\Rugero\Downloads\..\..\bin\> ffmpeg -i "C:\Users\Rugero\Downloads\input.jpg" -vf crop=200:100:0:130 scale=-1:240 "C:\Users\Rugero\Pictures\Cineplex Entertainment\FunnyImages\cropped_output_Unknownx240.bmp"</span></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>&copy; 2018 by Rugero Fabris</span> 
+        <script src=http://my.gblearn.com/js/loadscript.js></script> 
+    </footer>     
+</body>
+</html>

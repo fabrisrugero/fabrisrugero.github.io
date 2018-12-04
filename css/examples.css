@@ -1,0 +1,110 @@
+iframe{
+    border: 0px;
+}
+main{
+    padding-top: 0;
+}
+aside{
+    float: left;
+}
+section{
+    clear: left;
+}
+aside:first-of-type{
+    width: 550px;
+    padding-left: 10px;
+}
+aside:last-of-type{
+    width: 402px;
+    height: 311px;
+    overflow-y:scroll;
+    padding-left: 5px;
+    position: relative;
+    padding-right: 10px;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+}
+aside:last-of-type img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+aside:last-of-type img:first-of-type{
+    float: left;
+}
+aside:last-of-type img:not(:first-of-type){
+    clear: left; float: left;
+}
+aside:last-of-type h3{
+    float: left; 
+    font-size: 24px;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+aside:last-of-type div{
+    clear: left;
+    /* margin-top: 5px; */
+    display: inline-block;
+}
+
+aside:last-of-type h3:nth-of-type(even){
+    color: white;
+    text-decoration-color: white;
+}
+aside:last-of-type h3:nth-of-type(odd){
+    cursor: pointer;
+    color: #fefb64;
+    margin-left: 5px;
+    text-decoration-color: #ffa834;
+}
+section{
+    padding: 5px 10px 5px;
+}
+.text{
+    color: white;
+    font-size: 22px;
+    margin: 10px 10px 0;
+    font-family: 'NutCracker', Helvetica, Arial, sans-serif;
+}
+/* aside .text{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.55s ease-out;
+} */
+/* .textcontainer:hover > .text{
+    max-height: 500px;
+    transition: max-height 0.75s ease-in;
+} */
+.arrow-down{
+  transform: rotate(0deg);
+  transition: transform 0.8s linear;
+}
+.text.open{
+    overflow: hidden;
+    max-height: 500px;
+    transition: max-height 0.75s ease-in;
+}
+.text.close{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+}
+.arrow-down.open{
+  transform: rotate(90deg);
+  transition: transform 0.8s linear;
+}
+.textcontainer.close{
+    padding-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+    border: 0;
+}
+.textcontainer{
+    background-color: #58330a;
+    border: 2px solid white;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+.nomargins{
+    margin: 0;
+}

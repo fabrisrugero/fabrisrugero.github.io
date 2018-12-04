@@ -1,0 +1,110 @@
+main > section:first-child table{
+    width: 957px;
+    height: 430px;
+    margin: 10px 10px 10px;
+}
+.lineup{
+    vertical-align: top;
+}
+._90_degreees{
+    height: 333px;
+    width: 60px;
+}
+._180_degreees{
+    height: 297px;
+    width: 60px;
+}
+.arrow_heads_inverted{
+    display: block;
+    height: 61px;
+    width: 75px;
+}
+.arrows img:last-child{
+    display: inline-block;
+}
+.arrows h2{
+    color: white;
+    font-size: 50px;
+}
+.arrows div{
+    width: 270px;
+    height: 25px;
+    margin-top: 23px;
+    border: 2px solid white;
+    background-color: #ffa834;
+    border-right: 0;
+}
+table tr:nth-child(2) td:nth-child(2),
+table tr:nth-child(4) td:nth-child(2){
+    text-align: right;
+    vertical-align: top;
+    padding-right: 17px;
+}
+table tr:nth-child(1) td:nth-child(1) {
+    vertical-align: top;
+}
+table tr:nth-child(1) td:nth-child(1) div{
+    float: left; clear: left;
+}
+
+table tr:nth-child(1) td:nth-child(3) img,
+table tr:nth-child(3) td:nth-child(3) img{
+    float: left; clear: left;
+    margin-top: 5px;
+    height: 162px;
+    width: 111px;
+}
+
+table tr:nth-child(2) td:nth-child(2) h2,
+table tr:nth-child(1) td:nth-child(1) h2{
+    margin-top: 20px;
+}
+table tr:nth-child(3) td:nth-child(1) img,
+table tr:nth-child(5) td:nth-child(1) img{
+    float: right;
+    clear: right;
+    margin-right: 40px;
+}
+table tr:nth-child(3) td:nth-child(1) h2,
+table tr:nth-child(5) td:nth-child(1) h2{
+    width: 120px;
+    margin-top: 30px;
+    margin-left: 20px;
+    line-height: 0.9em;
+}
+table tr:nth-child(5) td:nth-child(1) h2{
+    margin-left: 8px;
+}
+table tr:nth-child(5) td:nth-child(3) h2{
+    line-height: 0.8em;
+}
+table tr:nth-child(1) td:nth-child(3) h2,
+table tr:nth-child(3) td:nth-child(3) h2{
+    float: right;
+    width: 120px;
+    clear: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    line-height: 0.9em;
+}
+table tr:nth-child(4) td:nth-child(2) div,
+table tr:nth-child(2) td:nth-child(2) div{
+    width: 235px;
+    float: right;
+    clear: right;
+    border-left: 0;
+    border-right: 2px solid white;
+}
+.commands img{
+    height: 45px;
+    width: 45px;
+    margin-left: 12px;
+}
+.commands div{
+    height: 45px;
+    width: 883px;
+    margin-left: 5px;
+}
+#arrow01,#arrow02,#arrow03,#arrow04{
+    margin-bottom: 7px;
+}
